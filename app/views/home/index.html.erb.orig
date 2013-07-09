@@ -13,13 +13,17 @@
 	<div class="container">
 		<h1>Welcome</h1>
 		<h2>Syntax Info!</h2>
-		<p>Please Select the language you would like to search for:</p>
-		<p>
-			<input type="radio" name="language" value="C++" id="Cplusplus"/>C++
-			<input type="radio" name="language" value="Jquery" id="Jquery"/>Jquery
-			<input type="radio" name="language" value="Web" id="Web"/>JavaScript/HTML/CSS
-			<input type="radio" name="language" value="PHP" id="PHP"/>PHP
-		</p>
+<p>Please Select the language you would like to search for:</p>
+<<<<<<< HEAD
+<p><input type="radio" name="language" value="C++" id="Cplusplus">C++ 
+	<input type="radio" name="language" value="Jquery" id="Jquery">Jquery 
+	<input type="radio" name="language" value="Web" id="Web">JavaScript/HTML/CSS
+	<input type="radio" name="language" value="PHP" id="PHP">PHP</p>
+<textarea contenteditable="true" spellcheck="true">Enter To Search!</textarea>
+<button type="button">search</button></center>
+=======
+<p><input type="radio" name="language" value="C++">C++ <input type="radio" name="language" value="Jquery">Jquery <input type="radio" name="language" value="Web">JavaScript/HTML/CSS
+<input type="radio" name="language" value="PHP">PHP</p>
 		<textarea contenteditable="true" spellcheck="true">Enter To Search!</textarea>
 		<br/>
 		<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">Search!</a>
@@ -37,6 +41,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 </body>
 </html>
+>>>>>>> issue/TwitterBootstrap
