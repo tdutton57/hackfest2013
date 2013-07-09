@@ -1,5 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hackfest2013</title>
+	<%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+	<%= stylesheet_link_tag    "bootstrap-responsive", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= javascript_include_tag "bootstrap" %>
+	<%= javascript_include_tag "jquery-1.10.2" %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome</h1>
+		<h2>Syntax Info!</h2>
+		<textarea contenteditable="true" spellcheck="true">Enter To Search!</textarea>
+		<button type="button">search</button>
+	</div>
+	<div class="modal hide fade">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3>Modal header</h3>
+		</div>
+		<div class="modal-body">
+			<p>One fine body…</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn">Close</a>
+			<a href="#" class="btn btn-primary">Save changes</a>
+		</div>
+	</div>
 
-<center><h1>Welcome</h1>
-<h2>Syntax Info!</h2>
-<textarea contenteditable="true" spellcheck="true">Enter To Search!</textarea>
-<button type="button">search</button></center>
+</body>
+</html>
