@@ -4,9 +4,9 @@
 	<title>Hackfest2013</title>
 	<%= stylesheet_link_tag    "bootstrap", :media => "all" %>
 	<%= stylesheet_link_tag    "bootstrap-responsive", :media => "all" %>
+	<%= javascript_include_tag "jquery-1.10.2" %>
 	<%= javascript_include_tag "application" %>
 	<%= javascript_include_tag "bootstrap" %>
-	<%= javascript_include_tag "jquery-1.10.2" %>
 	<%= csrf_meta_tags %>
 </head>
 <body>
@@ -14,21 +14,22 @@
 		<h1>Welcome</h1>
 		<h2>Syntax Info!</h2>
 		<textarea contenteditable="true" spellcheck="true">Enter To Search!</textarea>
-		<button type="button">search</button>
+		<br/>
+		<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">Search!</a>
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3 id="myModalLabel">Modal header</h3>
+			</div>
+			<div class="modal-body">
+				<p>One fine body…</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				<button class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
 	</div>
-	<div class="modal hide fade">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			<h3>Modal header</h3>
-		</div>
-		<div class="modal-body">
-			<p>One fine body…</p>
-		</div>
-		<div class="modal-footer">
-			<a href="#" class="btn">Close</a>
-			<a href="#" class="btn btn-primary">Save changes</a>
-		</div>
-	</div>
-
+	
 </body>
 </html>
