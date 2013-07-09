@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-App::Application.load_tasks
+Hackfest2013::Application.load_tasks

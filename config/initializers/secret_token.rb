@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-App::Application.config.secret_token = '63b588c4c549e970a45cdcb5c98b10dda08ce51e5baeaadd23c602d69ab0d800937e4aa4e3239d79b1372620d9620284199608071df9b6428fd805fff4d5ae6d'
+Hackfest2013::Application.config.secret_token = 'a7ae732fc19a3e34a5d1c30e7a610d22e90ec952becacee1314d0d320b766b7c0ff369fa3c65f9ed3644d90564fe3194b8f52542157ed8f822068208a8a04bb4'
