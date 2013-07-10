@@ -14,3 +14,12 @@
 body {
 	text-align: center;
 }
+.lower-labels label {
+	padding-top: 20px;
+	vertical-align:center;
+}
+.raise-input input {
+
+	position: relative;
+top: -10;
+}
