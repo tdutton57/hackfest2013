@@ -1,4 +1,4 @@
-$(document).ready(function(){
+var urlSearch = function(){
 	console.log("test");
 	$.ajax({ 
         type: 'GET', 
@@ -20,4 +20,5 @@ $(document).ready(function(){
 		}
     });
 });
+
 

@@ -1,5 +1,9 @@
 Hackfest2013::Application.routes.draw do
+  get "static_pages/getURL"
+
   get "home/index"
+
+  match '/getURL' => 'static_pages#getURL'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

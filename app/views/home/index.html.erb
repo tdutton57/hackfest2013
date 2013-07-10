@@ -5,6 +5,7 @@
 	<%= stylesheet_link_tag    "bootstrap", :media => "all" %>
 	<%= stylesheet_link_tag    "bootstrap-responsive", :media => "all" %>
 	<%= javascript_include_tag "jquery-1.10.2" %>
+	<%= javascript_include_tag "cppSearch.js" %>
 	<%= javascript_include_tag "application" %>
 	<%= javascript_include_tag "bootstrap" %>
 	<%= csrf_meta_tags %>
@@ -22,7 +23,7 @@
 		</p>
 		<textarea contenteditable="true" spellcheck="true">Enter To Search!</textarea>
 		<br/>
-		<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">Search!</a>
+		<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal" onclick=urlSearch()>Search!</a>
 		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -30,6 +31,7 @@
 			</div>
 			<div class="modal-body">
 				<p>One fine body…</p>
+				
 			</div>
 			<div class="modal-footer">
 				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
