@@ -10,7 +10,7 @@ var urlSearch = function(){
 			var path ="getURL?search=http://api.jquery.com/?s="+query;
 			break;
 		case "JavaScript":
-			var path = "getURL?search=http://google.com/search?q="+encodeURIComponent(query);
+			var path = "getURL?search=http://google.com/search?q=Javascript+"+query;
 			break;
 		default:
 			var path = "https://google.com";
