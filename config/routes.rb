@@ -5,6 +5,9 @@ Hackfest2013::Application.routes.draw do
 
   match '/getURL' => 'static_pages#getURL'
 
+  #map.create_list 'getURL', :controller => 'static_pages#getURL', :action => 'search', :conditions => { :method => :get }
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
