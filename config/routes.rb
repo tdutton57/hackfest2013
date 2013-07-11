@@ -1,9 +1,13 @@
 Hackfest2013::Application.routes.draw do
+  get "errors/error_404"
+
   get "static_pages/getURL"
 
   get "home/index"
 
   match '/getURL' => 'static_pages#getURL'
+
+  match '*not_found', to: 'errors#error_404' #unless Rails.application.config.consider_all_requests_local
 
   #map.create_list 'getURL', :controller => 'static_pages#getURL', :action => 'search', :conditions => { :method => :get }
 
