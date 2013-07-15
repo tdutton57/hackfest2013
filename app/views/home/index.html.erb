@@ -10,15 +10,15 @@
 	<%= javascript_include_tag "bootstrap" %>
 	<%= csrf_meta_tags %>
 </head>
-<body>
+<body >
 	<div class="container">
 		<h1>Welcome</h1>
 		<h2>Syntax Info!</h2>
 		<p>Please Select the language you would like to search for:</p>
 
-		<form action="/posts/1" method="post"  data-toggle="buttons-radio">
-			<div class="controls btn-group">
-				<input type="button" class="btn btn-info"name="language" value="C++" id="Cplusplus"/>
+		<form action="#myModal" data-toggle="modal" onsubmit("urlSearch();get_form(this).submit(); return false")>
+			<div class="controls btn-group" data-toggle="buttons-radio">
+				<input type="button" class="btn btn-info active"name="language" value="C++" id="Cplusplus"/>
 				<input type="button" class="btn btn-info" name="language" value="Jquery" id="Jquery"/>
 				<input type="button" class="btn btn-info" name="language" value="JavaScript" id="JavaScript"/>
 				<input type="button" class="btn btn-info" name="language" value="PHP" id="PHP"/>
@@ -37,10 +37,8 @@
 				<h3 id="myModalLabel">Modal header</h3>
 			</div>
 			<div class="modal-body">
-				<p>One fine body…</p>
-				<%= @results.inspect %>
-				<% query_result = "kittens" %>
-				<p><%= query_result %></p>
+				<% query_result = "" %>
+				<p><%= query_result%></p>
 			</div>
 			<div class="modal-footer">
 				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
