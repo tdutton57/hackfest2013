@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	$("#searchForm").submit(function (e){
 		e.preventDefault();
-		$('#searchButton').click(); 
-		return false;
+		$('#searchButton').trigger('click');
+		e.stopImmediatePropagation();		
 	});
 });
 
