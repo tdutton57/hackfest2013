@@ -16,9 +16,9 @@
 		<h2>Syntax Info!</h2>
 		<p>Please Select the language you would like to search for:</p>
 
-		<form action="#myModal" data-toggle="modal" onsubmit("urlSearch();get_form(this).submit(); return false")>
+		<form id="searchForm" >
 			<div class="controls btn-group" data-toggle="buttons-radio">
-				<input type="button" class="btn btn-info active"name="language" value="C++" id="Cplusplus"/>
+				<input type="button" class="btn btn-info active" name="language" value="C++" id="Cplusplus"/>
 				<input type="button" class="btn btn-info" name="language" value="Jquery" id="Jquery"/>
 				<input type="button" class="btn btn-info" name="language" value="JavaScript" id="JavaScript"/>
 				<input type="button" class="btn btn-info" name="language" value="PHP" id="PHP"/>
@@ -28,17 +28,16 @@
 			<label for="search_query">Enter control structure: </label>
 			<input type="text" name="search_text" id="search_query" contenteditable="true" spellcheck="true" placeholder="Type something…"/>
 			<br/>
-			<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal" onclick="urlSearch();get_form(this).submit(); return false">Search!</a>
+			<a id="searchButton" href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal" onclick="urlSearch();">Search!</a>
 		</form>
 		
 		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="myModalLabel">Modal header</h3>
+				<h3 id="myModalLabel">Results</h3>
 			</div>
 			<div class="modal-body">
-				<% query_result = "" %>
-				<p><%= query_result%></p>
+				<%= @results.inspect %>
 			</div>
 			<div class="modal-footer">
 				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
